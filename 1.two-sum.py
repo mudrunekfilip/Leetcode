@@ -1,4 +1,3 @@
-
 #
 # @lc app=leetcode id=1 lang=python3
 #
@@ -29,8 +28,10 @@
 # 
 # 
 # 
-#class Solution:
+#
+class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for index, val in enumerate(nums):
             for i in range(index+1, len(nums)):
                 if (val + nums[i] == target): return [index, i]
+
